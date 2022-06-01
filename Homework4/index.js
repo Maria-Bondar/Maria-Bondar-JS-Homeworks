@@ -94,7 +94,7 @@ function showMonthName(month) {
         break;
     }
   } catch (exception) {
-    console.log(exception.stack);
+    console.log(exception);
   }
 }
 let month = Number(prompt("Enter the month number", ""));
