@@ -82,7 +82,7 @@ let areaTriangle = Math.sqrt(
 console.log(areaTriangle.toFixed(3));
 let sumTwoSide = oneSideTriangle ** 2 + secondSideTriangle ** 2;
 if (sumTwoSide == thirdSideTriangle) {
-  console.log("Цей трикутник має прямийє прямокутним");
+  console.log("Цей трикутник є прямокутним");
 } else {
   console.log("Трикутник не є прямокутним");
 }

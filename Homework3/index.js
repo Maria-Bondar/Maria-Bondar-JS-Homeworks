@@ -35,22 +35,18 @@ function randArray(k) {
 randArray(k);
 
 //task №4
-let a = prompt("Enter first number", "");
-let b = prompt("Enter second number", "");
-if (Number.isInteger(a)) {
-  console.log("Введіть ціле число!");
-} else {
-  console.log(`Ви ввели число ${a}!`);
-}
-if (Number.isInteger(b)) {
-  console.log("Введіть ціле число!");
-} else {
-  console.log(`Ви ввели число ${b}!`);
-}
 function raiseToDegree(a, b) {
-  return a ** b;
+  let pow = a;
+  pow **= b;
+  return pow;
 }
-raiseToDegree(a, b);
+let a = +prompt("Enter first number", "");
+let b = +prompt("Enter second number", "");
+if (Number.isInteger(a) || Number.isInteger(b)) {
+  console.log(raiseToDegree(a, b));
+} else {
+  console.log("You enter incorect value!");
+}
 
 //task №5
 function findMin() {
