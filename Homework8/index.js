@@ -1,6 +1,6 @@
 // task 1
 function checkStr(string) {
-  let regExp = /[A-Z]/.test(string);
+  let regExp = /^[A-Z]/.test(string);
   if (regExp === true) {
     console.log("String's starts with uppercase character");
   } else if (regExp === false) {
@@ -15,7 +15,7 @@ let input = document.querySelector("#input");
 input.value = prompt("Enter your email", "");
 let emailUser = input.value;
 function checkEmail(emailUser) {
-  let checkUserEmail = /(@gmail.com)/gi.test(emailUser);
+  let checkUserEmail = /\S+@\S+\.\S/.test(emailUser);
   if (checkUserEmail === true) {
     console.log(`Your email ${emailUser} is correct`);
   } else {
@@ -37,15 +37,14 @@ console.log(result);
 
 // task 5
 let cardNumber = "9999 - 9999 - 9999 - 9999";
-let regExp5 = /(\d{4}) - (\d{4}) - (\d{4}) - (\d{4})/;
+let regExp5 = /^(\d{4}) - (\d{4}) - (\d{4}) - (\d{4})$/;
 console.log(regExp5.test(cardNumber));
 
 // task 6
 
 let newEmailUser = prompt("Please enter your email", "");
 function checkNewEmail(newEmailUser) {
-  let redExp6 =
-    /^([a-zA-Z0-9])+([a-zA-Z0-9][_]{0,})*([a-zA-Z0-9][\-]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/;
+  let redExp6 = /^[a-zA-Z0-9]+([-]?\w+)*@a-zA-Z0-9]+([-]?\w+)*(\.\w{2,3})+$/;
   let emailText = redExp6.test(newEmailUser);
   if (emailText === true) {
     console.log(`Your email is correct!`);
