@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //task 1
-  $("a").attr("target", "_blank");
+  $("a[href^=http://]").attr("target", "_blank");
 
   //task 2
   $("h2").find(".head");
