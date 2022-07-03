@@ -8,7 +8,7 @@ test.innerHTML = "Last";
 //task 2
 let image = document.querySelector(".image");
 image.src = "cat.jpg";
-alert(`New image: ${image.src}`);
+alert(image.outerHTML);
 
 // //task 3
 let paragraphs = document.querySelectorAll("p");
