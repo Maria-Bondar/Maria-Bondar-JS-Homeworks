@@ -1,0 +1,29 @@
+{
+  "name": "maria-bondar-js-homeworks",
+  "version": "1.0.0",
+  "description": "Finds the current date",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maria-Bondar/Maria-Bondar-JS-Homeworks.git"
+  },
+  "keywords": [
+    "ip",
+    "name",
+    "date",
+    "country"
+  ],
+  "author": "Maria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maria-Bondar/Maria-Bondar-JS-Homeworks/issues"
+  },
+  "homepage": "https://github.com/Maria-Bondar/Maria-Bondar-JS-Homeworks#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
+  }
+}
